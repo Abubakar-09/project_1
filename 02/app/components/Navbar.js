@@ -21,11 +21,13 @@ const Navbar = () => {
             </div>
             </Link>
             <div className="d">
+            <Link href='/cart'>
               <button className="p-2 px-3 text-sm text-black border-[1px] flex items-center gap-2 bg-white rounded-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1" /><circle cx="19" cy="21" r="1" /><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>
                 Cart
                 <p className="p-1 rounded-full h-[30%] text-white text-sm bg-[#007580]">2</p>
               </button>
+            </Link>
             </div>
           </div>
         </div>
@@ -57,11 +59,13 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent className='bg-white'>
               <div className="w-[80%] m-auto h-full gap-10 flex justify-center items-center flex-col">
+                <Link href='/cart'>
                 <button className="p-2 px-3 text-sm text-black flex items-center gap-2 bg-white border border-black rounded-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1" /><circle cx="19" cy="21" r="1" /><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>
                   Cart
                   <p className="p-1 rounded-full h-[80%] flex items-center text-white text-sm bg-[#007580]">2</p>
                 </button>
+               </Link>
                 <Link href='/'><p>Home</p></Link>
                 <Link href='/about'><p>About</p></Link>
                 <Link href='/contact'><p>Contact</p></Link>
